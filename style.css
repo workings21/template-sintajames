@@ -480,6 +480,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   position: relative;
 }
 
+.inset-x-0 {
+  left: 0px;
+  right: 0px;
+}
+
 .top-8 {
   top: 2rem;
 }
