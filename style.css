@@ -468,8 +468,38 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
-.fixed {
-  position: fixed;
+.container {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
 }
 
 .absolute {
@@ -491,10 +521,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .top-10 {
   top: 2.5rem;
-}
-
-.bottom-5 {
-  bottom: 1.25rem;
 }
 
 .bottom-3 {
@@ -524,6 +550,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .inline-block {
   display: inline-block;
+}
+
+.flex {
+  display: flex;
 }
 
 .h-screen {
@@ -575,6 +605,18 @@ Ensure the default browser behavior of the `hidden` attribute.
           animation: bounce 1s infinite;
 }
 
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
 .bg-red-400 {
   --tw-bg-opacity: 1;
   background-color: rgb(248 113 113 / var(--tw-bg-opacity));
@@ -582,6 +624,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .bg-\[\#6A6262\]\/\[55\%\] {
   background-color: rgb(106 98 98 / 55%);
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .bg-cover {
@@ -656,6 +703,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 @media (min-width: 768px) {
   .md\:w-\[500px\] {
     width: 500px;
+  }
+
+  .md\:w-1\/2 {
+    width: 50%;
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
   }
 }
 
